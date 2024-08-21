@@ -1,0 +1,232 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048 Doge | Play the Fun Meme-Inspired Puzzle Game Online</title>
+  <meta name="description" content="Play 2048 Doge, the meme-inspired version of the popular 2048 puzzle game. Slide tiles, match Doge faces, and reach the ultimate Doge tile! Enjoy this fun & challenging game online for free">
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta property="og:title" content="Wow! Such Doge Game!" />
+  <meta property="og:url" content="https://kaloodinaz.github.io/doge2048" />
+  <meta property="og:description" content="much tiles such fun" />
+  <meta property="og:image" content="/meta/doge-600.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
+  <style>
+    .navbar {
+        background-color: #333;
+        overflow: hidden;
+    }
+    .navbar .navbar-header {
+        float: left;
+    }
+    .navbar .nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .navbar .nav li {
+        float: left;
+    }
+    .navbar .nav li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 7px 10px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    .navbar .nav li a:hover {
+        background-color: #575757;
+    }
+    .navbar .nav li.active a {
+        background-color: #575757;
+    }
+    .container-fluid {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+        .navbar .nav {
+            float: none;
+            clear: both;
+            text-align: center;
+        }
+        .navbar .nav li {
+            float: none;
+            display: inline-block;
+        }
+        .navbar .nav li a {
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 16px;
+        }
+    }
+    
+    /* Responsive menu button */
+    .navbar .menu-btn {
+        display: none;
+        background-color: #333;
+        color: #fff;
+        padding: 7px 10px;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    @media (max-width: 768px) {
+        .navbar .menu-btn {
+            display: block;
+        }
+    }
+    
+    .navbar .nav-responsive {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .navbar .nav-responsive {
+            display: block;
+            text-align: center;
+        }
+        .navbar .nav-responsive li {
+            display: block;
+            float: none;
+        }
+    }
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="https://kaloodinaz.github.io/2048-online/">2048</a></li>
+        <li><a href="https://2048cupcakes.co.uk/">2048 cupcakes</a></li>
+        <li><a href="https://kaloodinaz.github.io/taylor-swift-2048">Taylor Swift 2048</a></li>
+      </ul>
+    </div>
+  </nav>	
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">DOGE<span style="color:red">2</span><span style="color:#00FF00">0</span><span style="color:blue">4</span><span style="color:#00FFFF">8</span>
+      </h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div class="doge-says">
+        <p></p>
+      </div>
+      <div class="info">
+        <h2>Introduction to 2048 Doge</h2>
+            <p>If you’re a fan of both memes and classic puzzle games, <strong>2048 Doge</strong> is a perfect blend of both worlds. This game is a playful twist on the popular 2048 puzzle game, featuring the iconic Doge meme. Instead of traditional numbers, you’ll slide and combine tiles with Doge faces to reach the ultimate Doge tile. It's a fun and engaging way to experience the classic game with a humorous twist.</p>
+            
+            <h2>How to Play 2048 Doge</h2>
+            <p>Playing <strong>2048 Doge</strong> is easy to pick up, especially if you're familiar with the original 2048 game. Here’s a quick guide on how to get started:</p>
+            <ul>
+                <li><strong>Objective:</strong> The goal is to combine tiles with Doge faces to reach the highest Doge tile possible, ideally reaching the 2048 Doge tile.</li>
+                <li><strong>Controls:</strong> Use the arrow keys on your keyboard or swipe gestures if you’re on a mobile device to move the tiles. Tiles with the same Doge face will merge into one when they collide.</li>
+                <li><strong>Strategy:</strong> Plan your moves carefully to prevent the board from filling up. Try to keep the higher-value tiles in one corner of the board to manage the space effectively.</li>
+            </ul>
+            
+            <h2>Game Features</h2>
+            <p><strong>2048 Doge</strong> offers several features that set it apart from other versions of 2048:</p>
+            <ul>
+                <li><strong>Meme Faces:</strong> Instead of numbers, you’ll see various Doge meme faces on the tiles, adding a fun and lighthearted element to the game.</li>
+                <li><strong>Simple Design:</strong> The game retains the minimalist design of the original 2048, making it easy to focus on the gameplay.</li>
+                <li><strong>Challenging Gameplay:</strong> Just like the original, <strong>2048 Doge</strong> provides a challenging and addictive experience that will keep you coming back for more.</li>
+            </ul>
+            
+            <h2>Where to Play 2048 Doge</h2>
+            <p>You can play <strong>2048 Doge</strong> directly in your browser. Simply visit the following link to start playing:</p>
+            <a href="https://kaloodinaz.github.io/doge2048" class="game-link">Play 2048 Doge</a>
+            
+            <h2>Conclusion</h2>
+            <p><strong>2048 Doge</strong> is a delightful twist on a classic puzzle game, bringing together the fun of the Doge meme with the addictive gameplay of 2048. Whether you’re a meme enthusiast or a puzzle game lover, this game is sure to provide hours of entertainment. Give it a try and see how high you can score!</p>
+            <p>&copy; 2024 2048 Doge Game. All rights reserved.</p>
+      </div>
+      <div class="key">
+        <!-- <div class="hide-key"><a>HIDE</a></div> -->
+       <h1>Key:</h1>
+       <p>2- <img src="/img/212/doge-wink-212.gif" alt="2" width="60" height="60"> 4- <img src="/img/212/doge-shake-space-212.gif" alt="4" width="60" height="60"> 8- <img src="/img/212/doge-peepers-212.gif" alt="8" width="60" height="60"> </p>
+       <p>16- <img src="/img/212/doge-prizza-212.gif" alt="16" width="60" height="60"> 32- <img src="/img/212/doge-hat-212.gif" alt="32" width="60" height="60"> 64- <img src="/img/212/doge-gradient-212.gif" alt="64" width="60" height="60"></p>
+       <p>128- <img src="/img/212/doge-fat-212.gif" alt="128" width="60" height="60"> 256- <img src="/img/212/doge-rainbow-212.gif" alt="128" width="60" height="60"> 512- <img src="/img/212/doge-sunglasses-212.gif" alt="512" width="60" height="60"> </p>
+       <p>1024- <img src="/img/212/doge-derp-212.gif" alt="1024" width="60" height="60"> 2048- <img src="/img/212/doge-shake-212.gif" alt="2048" width="60" height="60"> </p>
+      </div>
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+    <p class="game-explanation">Use your arrow keys or swipe to combine similar Doges and score points!</p>
+    <div class="info-container">
+      <a class="show-info">INFO</a>
+    </div>
+    <div class="key-container">
+      <a class="show-key">BLOCKS</a>
+    </div>
+  </div>
+<script defer src="js/bind_polyfill.js"></script>
+  <script defer src="js/classlist_polyfill.js"></script>
+  <script defer src="js/animframe_polyfill.js"></script>
+  <script defer src="js/keyboard_input_manager.js"></script>
+  <script defer src="js/html_actuator.js"></script>
+  <script defer src="js/grid.js"></script>
+  <script defer src="js/tile.js"></script>
+  <script defer src="js/local_score_manager.js"></script>
+  <script defer src="js/game_manager.js"></script>
+  <script defer src="js/application.js"></script>
+
+</html>
